@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 214 39% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 214 39% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 39% 10%;
+    --primary: 162 37% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 74% 80%;
+    --secondary-foreground: 214 39% 10%;
+    --muted: 210 17% 91%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 30 88% 69%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 17% 91%;
+    --input: 210 17% 91%;
+    --ring: 162 37% 52%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #F6B26B;
+    cursor: help;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+}
