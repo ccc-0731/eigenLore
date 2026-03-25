@@ -37,6 +37,9 @@
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
   }
+  h1, h2, h3 {
+    font-family: 'Figtree', sans-serif;
+  }
 }
 
 @layer components {
@@ -69,5 +72,43 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+
+  /* Markdown styles - Notion-like */
+  .markdown-content {
+    @apply text-foreground leading-relaxed;
+  }
+  .markdown-content h1 {
+    @apply text-3xl font-bold mb-4 mt-8;
+  }
+  .markdown-content h2 {
+    @apply text-2xl font-semibold mb-3 mt-6;
+  }
+  .markdown-content h3 {
+    @apply text-xl font-semibold mb-2 mt-4;
+  }
+  .markdown-content p {
+    @apply mb-4;
+  }
+  .markdown-content ul, .markdown-content ol {
+    @apply mb-4 pl-6;
+  }
+  .markdown-content li {
+    @apply mb-1;
+  }
+  .markdown-content blockquote {
+    @apply border-l-4 border-muted pl-4 italic mb-4;
+  }
+  .markdown-content code {
+    @apply bg-muted px-1 py-0.5 rounded text-sm;
+  }
+  .markdown-content pre {
+    @apply bg-muted p-4 rounded mb-4 overflow-x-auto;
+  }
+  .markdown-content pre code {
+    @apply bg-transparent p-0;
+  }
+  .markdown-content .katex {
+    @apply text-foreground;
   }
 }
