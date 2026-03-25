@@ -2,19 +2,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const projects = [
   {
-    title: 'Mathematical Visualization Tool',
-    description: 'Interactive web application for exploring complex mathematical concepts through dynamic visualizations.',
-    tags: ['React', 'D3.js', 'Mathematics']
+    title: 'Parodipi',
+    description: 'Turns math concepts into parody songs.',
+    tags: ['Hacklytics', 'Parody', 'Mathematics']
   },
   {
-    title: 'Algorithm Analysis Framework',
-    description: 'A comprehensive toolkit for analyzing and comparing algorithmic approaches to computational problems.',
-    tags: ['Python', 'Data Structures', 'Performance']
+    title: 'Hero Imagined',
+    description: 'Helps you become the childhood hero of your imaginations.',
+    tags: ['Python', 'Agentic Workflow', 'Creative Storytelling']
   },
   {
-    title: 'Creative Coding Experiments',
-    description: 'Collection of generative art and interactive experiences built with modern web technologies.',
-    tags: ['JavaScript', 'Canvas', 'WebGL']
+    title: 'DaleDB',
+    description: 'Noooo precious, we HATES hashmapses!',
+    tags: ['1332', 'Horrible Debugging', 'Java', 'Data Structures']
   }
 ]
 

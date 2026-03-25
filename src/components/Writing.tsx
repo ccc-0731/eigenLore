@@ -1,18 +1,18 @@
 const posts = [
   {
-    title: 'Understanding Eigenvalues and Eigenvectors',
-    date: '2024-03-15',
-    excerpt: 'A deep dive into the fundamental concepts of linear algebra and their applications in modern computing.'
+    title: 'No title yet',
+    date: '2023-2025',
+    excerpt: 'Escapism on Europa'
   },
   {
-    title: 'The Art of Algorithm Design',
-    date: '2024-02-28',
-    excerpt: 'Exploring the creative process behind designing efficient algorithms for complex problems.'
+    title: 'A_n',
+    date: '2026-3',
+    excerpt: 'What if the world is a simulation, but its told from the first person perspective of kids just trying to understand their relationship with the world?'
   },
   {
-    title: 'Generative Art: Code as Canvas',
-    date: '2024-02-10',
-    excerpt: 'How programming can be used as a medium for artistic expression and mathematical exploration.'
+    title: 'Coming of Age horror story',
+    date: '2026-3',
+    excerpt: 'The world is being consumed by AI brainrot, and kids are what is left standing between adults and insanity. 17yr old kid alliances with squirrels to target this crisis.'
   }
 ]
 

@@ -3,11 +3,10 @@ export default function Hero() {
     <section className="text-center space-y-8">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-foreground font-figtree">
-          EigenLore
+          Hello there!
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Exploring the intersections of mathematics, computation, and creative expression.
-          A space for ideas, projects, and reflections.
+          Panda's personal website. I want to be a person that bridges the pure mathematical, engineering and creative perspectives. So one day, I will invent a job for myself that blends all of those 👍
         </p>
       </div>
       <div className="flex justify-center">

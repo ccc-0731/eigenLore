@@ -9,10 +9,10 @@ export default function Navbar() {
         </Link>
         <div className="flex space-x-6">
           <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
-            Projects
+            Blog; Crazy Project Ideas
           </Link>
           <Link href="#writing" className="text-muted-foreground hover:text-foreground transition-colors">
-            Writing
+            Stories
           </Link>
           <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
             About
