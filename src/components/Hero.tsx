@@ -6,7 +6,7 @@ export default function Hero() {
           Hello there!
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Panda's personal website. I want to be a person that bridges the pure mathematical, engineering and creative perspectives. So one day, I will invent a job for myself that blends all of those 👍
+          Panda&apos;s personal website. I want to be a person that bridges the pure mathematical, engineering and creative perspectives. So one day, I will invent a job for myself that blends all of those 👍
         </p>
       </div>
       <div className="flex justify-center">
