@@ -8,6 +8,9 @@ interface QuoteProps {
 
 const normalQuotes = [
   "But Why?",
+  "But Why?",
+  "But Why?",
+  "But Why?",
   "Three point one four one five nine, two six five three five eight nine!~",
   "Fun fact: I know 400 digits of pi and I am very proud of it (:",
   "What if the world is a simulation...? 🤔",

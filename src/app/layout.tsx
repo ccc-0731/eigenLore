@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'EigenLore',
   description: 'Personal website',
+  icons: {
+    icon: '/eigenPi.svg',
+  },
 }
 
 export default function RootLayout({
