@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.GITHUB_ACTIONS === 'true'
+
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/eigenLore' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/eigenLore/' : '',
+  basePath: isProd ? '/eigenLore' : '',
+  assetPrefix: isProd ? '/eigenLore/' : '',
   images: {
     unoptimized: true,
   },
