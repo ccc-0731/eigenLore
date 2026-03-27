@@ -14,7 +14,7 @@ export default function Blog() {
           <header className="space-y-4">
             <h1 className="text-4xl font-bold mb-8">Blog</h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Thoughts, insights, and explorations in code, mathematics, and creative problem-solving.
+              Weird thinkings.
             </p>
           </header>
 

@@ -27,16 +27,16 @@ export default function Navbar() {
           />
         </Link>
         <div className="flex space-x-6 items-center">
-          <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
             {labels.blog}
           </Link>
-          <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
             {labels.projects}
           </Link>
-          <Link href="/stories" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/stories" className="text-muted-foreground hover:text-primary transition-colors">
             {labels.stories}
           </Link>
-          <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
             {labels.about}
           </Link>
         </div>

@@ -19,8 +19,8 @@ export default function Home() {
         {/* Blog Posts Section */}
         <section className="space-y-8">
           <div className="flex items-center justify-between">
-            <h2 className="text-3xl font-semibold text-foreground">Latest Posts</h2>
-            <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+            <h2 className="text-3xl font-semibold text-foreground">Blogs</h2>
+            <a href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
               View all →
             </a>
           </div>
@@ -35,7 +35,7 @@ export default function Home() {
         <section className="space-y-8">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-semibold text-foreground">Projects</h2>
-            <a href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
               View all →
             </a>
           </div>
@@ -50,7 +50,7 @@ export default function Home() {
         <section className="space-y-8">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-semibold text-foreground">Stories</h2>
-            <a href="/stories" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/stories" className="text-muted-foreground hover:text-primary transition-colors">
               View all →
             </a>
           </div>

@@ -16,6 +16,7 @@ const normalQuotes = [
   "What if the world is a simulation...? 🤔",
   "🤔",
   "Look, Shiri; stars!",
+  "Those aren't bugs. They are features.",
   "I will grow up, but I'll never be a boring grown-up like you!' -- The Little Prince Movie (2015)"
 ]
 
@@ -23,7 +24,6 @@ const nerdQuotes = [
   "What is my largest eigenvalue?",
   "The taste vectors of this pho at Tin Drum don't seem linearly independent.",
   "My column vectors seem orthogonal, but they are secretly linearly dependent.",
-  "One must still have chaos within oneself to give birth to a dancing star. —Nietzsche (who was arguably nerdy AF)",
   "To understand recursion, you must first understand recursion. --Claude, when writing this feature",
   "The universe is made of math. Change my mind.",
   "Complexity is the only constant, entropy the only guarantee.",
