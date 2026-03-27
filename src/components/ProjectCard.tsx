@@ -13,12 +13,16 @@ interface ProjectCardProps {
  * Used for projects and stories
  */
 export default function ProjectCard({ item, showLink = false, showDate = false }: ProjectCardProps) {
+  // Get basePath from environment
+  const basePath = process.env.GITHUB_PAGES ? '/eigenLore' : ''
+  const imageSrc = item.image?.startsWith('/') ? `${basePath}${item.image}` : item.image
+
   const CardContent = () => (
     <Card className="hover:border-primary/50 transition-colors">
       {item.image && (
         <div className="aspect-video relative overflow-hidden rounded-t-lg">
           <Image
-            src={item.image}
+            src={imageSrc || ''}
             alt={`${item.title} preview`}
             fill
             className="object-cover"

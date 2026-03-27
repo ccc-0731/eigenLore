@@ -5,11 +5,14 @@ import { NerdModeProvider } from '@/lib/NerdModeContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// Get basePath from environment
+const basePath = process.env.GITHUB_PAGES ? '/eigenLore' : ''
+
 export const metadata: Metadata = {
   title: 'EigenLore',
   description: 'Personal website',
   icons: {
-    icon: '/eigenPi.svg',
+    icon: `${basePath}/eigenPi.svg`,
   },
 }
 
