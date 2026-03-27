@@ -50,7 +50,7 @@ export default function ProjectCard({ item, showLink = false, showDate = false }
   )
 
   if (showLink) {
-    const href = item.type === 'project' ? `/projects/${item.slug}` : `/stories/${item.slug}`
+    const href = item.type === 'project' ? `/eigenLore/projects/${item.slug}` : `/eigenLore/stories/${item.slug}`
     return (
       <a href={href} className="block">
         <CardContent />
