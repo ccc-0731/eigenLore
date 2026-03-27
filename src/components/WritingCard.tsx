@@ -29,7 +29,7 @@ export default function WritingCard({ item, showLink = false }: WritingCardProps
 
   if (showLink) {
     return (
-      <a href={`eigenLore/blog/${item.slug}`} className="block">
+      <a href={`blog/${item.slug}`} className="block">
         <CardContent />
       </a>
     )
