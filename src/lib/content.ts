@@ -12,8 +12,8 @@ export interface ContentItem {
 export const contentCollections = {
   blog: [
     {
-      title: 'Info for myself',
-      description: 'A demonstration of markdown rendering with LaTeX support, written by AI',
+      title: 'Template 😄',
+      description: 'Go-to for markdown rendering and LaTeX support',
       date: '2026-03-25',
       tags: ['markdown', 'latex', 'demo'],
       slug: 'sample-blog-post',
