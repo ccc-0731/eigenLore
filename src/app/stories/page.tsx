@@ -16,7 +16,7 @@ export default function Stories() {
             <p className="text-lg text-muted-foreground max-w-2xl">
               My creative side and wierd whims. 
               
-              Please properly attibute me (link to https://ccc-0731.github.io/eigenLore) and don&apos;t steal them!
+              Please attibute me (link to https://ccc-0731.github.io/eigenLore) and don&apos;t steal them!
             </p>
           </header>
 

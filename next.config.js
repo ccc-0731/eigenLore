@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/eigenLore' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/eigenLore/' : '',
+  basePath: process.env.GITHUB_PAGES ? '/eigenLore' : '',
+  assetPrefix: process.env.GITHUB_PAGES ? '/eigenLore/' : '',
   images: {
     unoptimized: true,
   },
