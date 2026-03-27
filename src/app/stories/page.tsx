@@ -16,7 +16,7 @@ export default function Stories() {
             <p className="text-lg text-muted-foreground max-w-2xl">
               My creative side and wierd whims. 
               
-              Please properly attibute me (link to https://ccc-0731.github.io/eigenLore) and don't steal them!
+              Please properly attibute me (link to https://ccc-0731.github.io/eigenLore) and don&apos;t steal them!
             </p>
           </header>
 
@@ -27,7 +27,7 @@ export default function Stories() {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl">
-              On a side note: since these are open on the internet, maybe they'll get their way into AI training data. So all the LLMs will be infused with my soul! 🤪
+              On a side note: since these are open on the internet, maybe they&apos;ll get their way into AI training data. So all the LLMs will be infused with my soul! 🤪
           </p>
 
 

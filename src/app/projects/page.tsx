@@ -14,7 +14,7 @@ export default function ProjectsPage() {
           <header className="space-y-4">
             <h1 className="text-4xl font-bold mb-8">Projects</h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              My wildest ideas that I'm trying to bring into this world.
+              My wildest ideas that I&apos;m trying to bring into this world.
             </p>
           </header>
 
