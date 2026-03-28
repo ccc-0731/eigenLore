@@ -56,6 +56,61 @@ $$
 `
     },
     {
+      title: 'Fiction Series I like',
+      description: 'Movies & Stories',
+      date: '2026-03-28',
+      slug: 'fiction-i-like',
+      type: 'blog' as const, // Using blog type for about since it doesn't need images
+      content: `# Fiction Movies I can think of on top of my head
+
+I just very recently watched Project Hail Mary, it was super cool!!!
+
+### Scifi Movies
+* Project Hail Mary
+* The Martian
+* Star Wars (1-6 & Rogue One)
+
+
+### Fantasy/from Book
+Lotr/Hobbit:
+* The Two Towers 🏆
+
+### 直击心灵(?
+Kungfu Panda!!! *4
+
+The Little Prince Movie (2015)
+
+### DreamWorks
+How to Train Your Dragon *3
+
+### Pixar
+Ratatouille
+Soul
+Elio
+Up
+Inside Out *2
+Zootopia *2
+Toy Story *4
+
+### Japanese
+新海诚 *3
+宫崎骏& Studio Ghibli
+
+### Chinese Animated Classics
+哪吒 *2
+深海
+大圣归来
+
+Harry Potter?
+
+
+## Only TV shows I watched
+Percy Jackson!
+Sherlock
+`
+
+    }, 
+    {
       title: 'About',
       description: 'But who am I?',
       date: '2026-03-25',
@@ -427,6 +482,103 @@ Wait, since this is my last thought and I am the last human, then who would be w
       content: `
 
 [Eigen, Helix and Kuiper.]{Main characters!}`
+    },
+    {
+      title: 'One upon a time',
+      description: 'Nonsensical stream of consciousness mathematical fiction.',
+      date: '2026-03',
+      slug: 'math-time',
+      type: 'story' as const,
+      image: '/eigenPi_confused.png',
+      content: `## One upon a time
+
+### t = 0
+
+Once upon a time there were kingdoms, 
+
+and there was a traveller between the kingdoms.
+
+The traveller decided to go out and explore, since where it grew up, everyone was too rational.
+
+### t = 1
+
+The traveller was beyond the domain of where it came from, and stopped by where the woods give way to a stream. On the branches, there were two mischievous voices. 
+
+One said, Yes, both me and you will take over this world.
+
+The other said, Not neither me or you would take over.
+
+Just you wait and see, they said in unison, then disappeared into another dimension.
+
+### t = 2
+
+The traveller crossed the stream. He saw something very long shrouded by the mist, in the distance. 
+
+It looked wizened, but one could look upon it without end. 
+
+Hello, said the traveller.
+
+Hello, replied the countably infinitely long number. The reply echoed for a long while, dampening while never seeming to dissipate. 
+
+Who are you? Asked the traveller.
+
+I am the long number that has all of what you know. The scope – the size, of what you know, is no more than the size of me.
+
+Well, that’s a very arrogantly large number, Thought the traveller.
+
+### t = {3}
+Then the traveller came upon the first county. Everything seemed very flat and bland, all the residents were binary strings. There was a screen in the center of the county, that one of ones and zeroes could walk through, and would come out on the other side as a set of numbers. Some of them nonchalantly walked by, others routinely walked through the screen as if nothing else happened, while others still ran at the screen as if their entire life depended on it.
+
+### t = 4
+It was close to dusk, and the traveller intends to reach the conclusion of its first day of travels soon. These lands are hostile, where strange creatures roam.
+
+There is an infinitely tall hotel building. The traveller ascends. 
+
+Ah, this must be the legendary infinite hotel.
+
+The traveller asks to be resided in room number 42 for the night.
+
+### t = 5
+
+The traveller dreams of a secret key that will open a door into the unknown.
+
+### t = 6
+
+A 5-dimensional ball is in the lead of an army of infinitesably small balls.
+
+### t = f(t)
+
+The traveller encounters another county where the integers there would walk into a box and forget that they were still themselves. Some of them become the same.
+
+### t = t + 1
+
+There was one county where all the integers were in chains. Every number held on to the one before it, while the next grasped on to it, never letting go.
+
+### t = (x, y)
+
+The traveller comes upon a county where the residents do a weird dance. At one time interval, they would all be paired up and standing in their corresponding locations. At another time, they would frantically run around on their axis until bumping into another that is travelling orthogonal.
+
+### t = R
+
+The traveller met a snake. The snakes said that it could not consider itself a worthy opponent to the reals, 
+
+### t = pi
+A breeze swept by and circled the traveller. It seemed to keep circling in a never-ending laugh.
+
+### t = A
+Numbers standing in rows and columns, marching as an army.
+
+Two matrices poised facing each other, at war.
+
+Arrows in their span were shot. Some got contorted, while others merely got stretched. The ones that stayed in the same direction seemed ever-so powerful, radiating out energy signals that presumably transcends into other counties.
+
+### t = n + 1
+The traveller met zero.
+
+And the traveller asked, 
+
+who am I?
+}`
     }
   ]
 }

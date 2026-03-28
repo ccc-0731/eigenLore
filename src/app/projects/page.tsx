@@ -16,6 +16,9 @@ export default function ProjectsPage() {
             <p className="text-lg text-muted-foreground max-w-2xl">
               My wildest ideas that I&apos;m trying to bring into this world.
             </p>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              ❗️My API keys free trial just ended, so the demos might not work...
+            </p>
           </header>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
