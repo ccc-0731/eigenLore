@@ -305,6 +305,34 @@ Github: https://github.com/ccc-0731/hero_imagined
 ## The Problem
 
 Silly Hashmaps take too long to debug ):`
+    }, {
+      title: 'Would the Little Prince Really Hate Math?',
+      description: 'Noooo precious, we HATES hashmapses!',
+      date: '2026-03',
+      tags: ['ENGL 1102', 'Essay', 'Math Nerdiness'],
+      slug: 'le-petit-math',
+      type: 'project' as const,
+      image: '/eigenPi_confused.png',
+      content: `
+## “Set Theory and Sunsets: Would the Little Prince Really Hate Math?”
+
+The Little Prince critiques grown-ups as being obsessed with quantifying things with numbers. However, mathematicians argue that math is more about imaginative problem solving than about numbers. The social stigma against mathematics is backed by how math is portrayed in a stereotypical way in children’s literature and media, often associated with rigidness and conformity. The main critique from the little prince is about adults that lose imagination and stop asking questions, how society as a collective over-quantify things – confusing the abstraction from what should be understood and felt. The ways that literary works portray the subject of math is an example. Whether it is in the infinite set of ways the Little Prince is interpreted or how math is viewed as rigid or “nerdy”, our views and interpretations of a story or concept reveal more about ourselves than the story or a concept itself.
+
+While the Little Prince has many interpretations, we will focus on the contrast between the child and grown-up interpretation of the world. The story demonstrates how adults would sink into a vortex of their own obsessive thinking, which involves quantifying things such as the businessman counting stars. In the movie adaptation of The Little Prince (2015), it also clearly shows the protagonist doing math (vector geometry) and linear algebra (as shown in matrices and vectors) as a sign of conforming to the extremely “adult” world. However, these ideologies the prince does not approve of do not contradict the essence of math. The Little Prince states that “It is only with the heart that one can see rightly; what is essential is invisible to the eye”. Similar to this principle, mathematicians make discoveries by imagination – where the problem-solving process closely resembles children exploring imaginative possibilities, whether it’s René Descartes inventing the coordinate system or Benoit Mandelbrot deriving the notion of fractals (Podlubny). Mathematicians are child-like in a way where they get absorbed in the problem and theory that is not at all relevant to practical application at first glance. Mathematicians would argue that true mathematical discoveries are guided by imagination, just as the Little Prince says about what “cannot be deduced by standard procedures or derivations” (Podlubny). Therefore, immersing in the art of problem solving, the joy of experimenting with different approaches is analogous to appreciating a sunset, even an act of defiance to how modern society get over-consumed in “matters of consequence”. 
+
+More broadly speaking, critiques of how math is taught in the current world show more about how math is taught than the subject of mathematics itself. This reveals itself in a general way where math is often portrayed in a negative and stereotypical way in children’s literature and media, which reinforces the negative opinions about mathematics to the next generation. Popular culture (including TV and books) for children typically depicts math as boring, difficult and reserved for “nerds” – even completely “boring and devoid of creativity” (Hall). While there are characters in children' s science fiction stories that like math – such as Meg in a Wrinkle in Time, the societal impact is larger for the works that are more popular among younger generations as the study examined. There is the inherent cause that many authors are more drawn to humanities as authors, yet this reflects the societal perception of how particularly the math that is mandatory for schools education. Mathematicians in the field assert the polar opposite while admitting that classroom math is only an unrepresentative part of the more repetitive basic arithmetic. Studies recognise that the math classes taught in schools are seen as “obligatory but not useful”, “tense, terrible, [and] difficult”. It follows the same logic where how the businessman in the Little Prince confuses quantifying the stars with numbers as owning (in a literal sense when discussing mathematics) to what they are representing; math is stripped of the problem solving at its essence and the mundane version often only presented to the younger generation in classrooms and in stories. However, none of these perceptions are accurate as demonstrated by the contradicting arguments of those in the field. That is, the social commentary about mathematics says less about the subject than how the subject is received by the public.
+
+Critics have judged the Little Prince, ironically disregarded and looked down upon by the very “adults” that the story describes as not able to “see with the heart” anymore. In a similar way, math is well beyond simply quantifying things and basic arithmetic. How we interpret something shows more about ourselves than the concept that we are trying to interpret, both seen in the interpretation of the Little Prince as well as the stereotyped portrayal of math. While the Little Prince finds sunsets on his asteroid, mathematicians are kids on their own asteroids that discover their “sunsets” through imagining the connection between concepts in their understanding.
+
+
+### Works Cited
+
+ Darragh, Lisa. “Loving and Loathing: Portrayals of School Mathematics in Young Adult Fiction.” Journal for Research in Mathematics Education [Washington], vol. 49, no. 2, March 2018, pp. 178–209, https://doi.org/10.5951/jresematheduc.49.2.0178.
+
+  Hall, Jennifer, and Christine Suurtamm. “Numbers and Nerds: Exploring Portrayals of Mathematics and Mathematicians in Children’s Media.” International Electronic Journal of Mathematics Education [East Sussex], vol. 15, no. 3, October 2020, p. em0591, https://doi.org/10.29333/iejme/8260.
+
+Podlubny, Igor. “The Little Prince -- the Lost Chapter.” Journal of Humanistic Mathematics, vol. 11, no. 2, July 2021, pp. 409–416, https://doi.org/10.5642/jhummath.202102.24. Accessed 29 Oct. 2021.
+`
     }
   ],
   stories: [
