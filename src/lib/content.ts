@@ -508,8 +508,31 @@ Wait, since this is my last thought and I am the last human, then who would be w
       type: 'story' as const,
       image: '/eigenPi_confused.png',
       content: `
+Link to google doc:
+      https://docs.google.com/document/d/1Z9GJCi71R9sy2xKCRj-h0oS0fHHJN7cQ2G9yBUO_fyY/edit?usp=sharing
+[Eigen, Helix and Kuiper.]{Main characters!}
 
-[Eigen, Helix and Kuiper.]{Main characters!}`
+`
+    }, {
+      title: 'Europa (not real title yet)',
+      description: 'What if 9th grade me was really tired of life, but went onto Europa to encounter the kid who wants above all to go to Earth?',
+      date: '2023-2025',
+      slug: 'europa',
+      type: 'story' as const,
+      image: '/eigenPi_confused.png',
+      content: `
+
+## Story
+
+<div style="width: 100%; display: flex; justify-content: center;">
+  <iframe
+    src="/eigenLore/europa.pdf"
+    width="100%"
+    height="800px"
+    style="border: none; max-width: 900px;"
+  ></iframe>
+</div>
+`
     },
     {
       title: 'One upon a time',
