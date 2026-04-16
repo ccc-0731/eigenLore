@@ -509,8 +509,7 @@ Wait, since this is my last thought and I am the last human, then who would be w
       image: '/eigenPi_confused.png',
       content: `
 Link to google doc:
-      https://docs.google.com/document/d/1Z9GJCi71R9sy2xKCRj-h0oS0fHHJN7cQ2G9yBUO_fyY/edit?usp=sharing
-[Eigen, Helix and Kuiper.]{Main characters!}
+      [Story](https://docs.google.com/document/d/1Z9GJCi71R9sy2xKCRj-h0oS0fHHJN7cQ2G9yBUO_fyY/edit?usp=sharing)
 
 `
     }, {
