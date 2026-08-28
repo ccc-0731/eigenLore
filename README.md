@@ -1,6 +1,9 @@
 # EigenLore 🐼
 
 My personal website exploring the intersections of mathematics, computation, and creative expression.
+Fully Vibe-Coded don't ask me how it works. If it works, it works (:
+
+This README is instruction manual for myself.
 
 ## Eigen + Lore = (My) Own Stories
 

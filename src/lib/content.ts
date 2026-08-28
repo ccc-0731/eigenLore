@@ -155,6 +155,20 @@ This is MY personal website! So I'm going to put whatever I like on it.`
   ],
   projects: [
     {
+      title: 'Micromouse',
+      description: 'My story with Micromouse',
+      date: '2024 June - present',
+      tags: ['EE', 'PCB Design', 'Soldering', 'EasyEDA'],
+      slug: 'mmouse',
+      type: 'project' as const,
+      image: '/firemousezuko.png',
+      content: `# Micromouse
+
+## I made this cool board over 2026 summer all by myself!
+
+Yata yaa yaa I need to tell CodeX to make a GUI for this, I don't want to be typing blogs in VSCode...`
+    },
+    {
       title: 'Parodipi',
       description: 'Turns math concepts into parody songs.',
       date: '2026-02',

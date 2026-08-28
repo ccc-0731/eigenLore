@@ -17,7 +17,8 @@ const normalQuotes = [
   "🤔",
   "Look, Shiri; stars!",
   "Those aren't bugs. They are features.",
-  "I will grow up, but I'll never be a boring grown-up like you!' -- The Little Prince Movie (2015)"
+  "I will grow up, but I'll never be a boring grown-up like you!' -- The Little Prince Movie (2015)",
+  "I must caputre a birdie to regain my honor! --Me being like Zuko"
 ]
 
 const nerdQuotes = [
