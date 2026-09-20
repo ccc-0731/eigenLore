@@ -15,19 +15,46 @@ export const contentCollections = {
   blog: [
     {
       title: '2026 Summer',
-      description: 'Main themes are Avatar the Last Airbender; I got really good at disc golf; and I custom made a pcb named Zuko.',
+      description: 'All hail firemouse Zuko!',
       date: '2026 Summer',
-      tags: ['Avatar', 'Disc Golf', 'PCB'],
+      tags: ['ATLA', 'Zuko', 'Disc Golf', '#IMustCaptureABirdie2ReclaimMyHonor', 'PCB Design'],
       slug: '2026-summer',
       type: 'blog' as const,
       image: '/2026Summer.png',
-      content: `Main themes are Avatar the Last Airbender; I got really good at disc golf; and I custom made a pcb named Zuko.`
+      content: `I watched Avatar the Last Airbender; I got really good at disc golf; and I custom made a pcb named Zuko!`
+    },
+    {
+      title: 'HackGT 13 app',
+      description: 'I had a lot of fun writing these 100 word essays for HackGT13 application, so I\'m putting them here (: ',
+      date: '2026-09-10',
+      slug: 'hackgt-13-app',
+      type: 'blog' as const,
+      content: `I had a lot of fun writing these 100 word essays for HackGT13 application, so I'm putting them here (: 
+
+### What are you looking for out of your experience by attending HackGT 13?
+
+I really enjoyed the atmosphere of HackGT 12, my first hackathon, even though the project I was trying to build didn't work out! There is a motivation unique to hackathons where you are surrounded by a community of passionate and enthusiastic builders, where ideas sprout like seeds nurtured at the ideal temperature. Having learned more about the tech world around me and myself (now a year older), I would like to make something practical and cool that is authentically human and really helps people in this age of AI slop, and to see what other people are building!
+
+### Tell us about a project you've worked on for an extended period of time. Why did you work on it and what did you learn? This project can be technical or non-technical.\*
+
+I never could have imagined belonging at the APEC Micromouse competition, but there I was, someone that used to be just a kid among the 24 million viewers of a veritasium video about it. Curiosity led me to begin making micromouse at GT and I ended up as engineer behind the robot’s entire PCB. To me, it was my first PCB, after iterations of asking mentors “will this blow up” and routing late into the nights. Aside from the technical skills, I often look back on how curiosity and a passion to learn brought me to places I never imagined.
+
+### What's something (e.g. a local shop, food, story, tradition, or hidden gem) you've discovered recently, and why has it stuck with you?\*
+
+Four months ago, my friend took me out to play disc golf for the very first time in my life! It quickly turned out to be the love of my life. I simply couldn't resist the lure of the gentle summer wind, the inviting grass--just being out there in nature, wandering around and seriously investigating the aerodynamics of trying to throw pieces of plastic into the horizon without hitting trees--it's so satisfying. The community as well in this very niche sport also has been very open and welcoming, and now I can find fellow disc golfer friends wherever I go.
+
+### If you could set up a stall at our seaside market selling anything (real or imaginary), what would you sell, and how would you convince everyone to stop by?\*
+
+(Based on the setting of Percy Jackson and the Olympians)
+
+I want to sell a blessing from Poseidon that makes you gain ocean superpowers for a brief summer afternoon! No need for too much convincing, who wouldn't enjoy the ability to breathe underwater, master the currents, talk to sea creatures, or control water with sheer willpower alone? Anyone, even someone injured, sick, or just can’t swim can actually enjoy time by the seaside with ocean powers that can help mobilize on the water without getting wet. 
+I guess the hard part is convincing Poseidon to make me sell this.`
     },
     {
       title: 'Disc Golf',
-      description: 'I will write about my disc golf story.',
+      description: 'I love throwing plastic outdoors!',
       date: '2026.5 - present',
-      tags: ['Disc Golf', 'Outside'],
+      tags: ['🥏', '🌲'],
       slug: 'disc-golf',
       type: 'blog' as const,
       image: '/discGolfputting.jpg',
@@ -37,7 +64,7 @@ export const contentCollections = {
       title: 'Stuffed Animals',
       description: 'I will introduce all my stuffed animals (: ',
       date: '2026',
-      tags: ['Friends', 'Lore'],
+      tags: ['🐼', '🦭','🐿️','🦁', '🐍','🐦‍⬛','🦡', '🦕','🦉','🐙', '...'],
       slug: 'stuffed-animals',
       type: 'blog' as const,
       image: '/stuffed animals.png',
@@ -166,13 +193,17 @@ Sherlock
 
 ## I made this cool board over 2026 summer all by myself!
 
-Yata yaa yaa I need to tell CodeX to make a GUI for this, I don't want to be typing blogs in VSCode...`
+I started out just as one of the 24 million viewers of this veritasium video. (https://www.youtube.com/watch?v=ZMQbHMgK2rw)
+
+I never could have imagined belonging at the APEC Micromouse competition, but there I was, someone that used to be just a kid among the 24 million viewers of a veritasium video about it. Curiosity led me to begin making micromouse at GT and I ended up as engineer behind the robot’s entire PCB. To me, it was my first PCB, after iterations of asking mentors “will this blow up” and routing late into the nights. Aside from the technical skills, I often look back on how curiosity and a passion to learn brought me to places I never imagined.
+(Copied from hackgt13 application! I’ll write more about it later.)
+`
     },
     {
       title: 'Parodipi',
       description: 'Turns math concepts into parody songs.',
       date: '2026-02',
-      tags: ['Hacklytics', 'Parody', 'Mathematics'],
+      tags: ['Hacklytics', 'Parody', 'Math'],
       slug: 'parodipi',
       type: 'project' as const,
       image: '/Parodi_Pi creature.png',
@@ -251,7 +282,7 @@ https://parodipi.onrender.com/
       title: 'Hero Imagined',
       description: 'Helps you become the childhood hero of your imaginations.',
       date: '2025-11',
-      tags: ['Python', 'Agentic Workflow', 'Creative Storytelling'],
+      tags: ['Python', 'Agentic Workflow', 'Creative Storytelling', 'vibe-coding', 'Google Gemini', 'ElevenLabs'],
       slug: 'hero-imagined',
       type: 'project' as const,
       image: '/hero_imagined.png',
