@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import ContentCard from '@/components/ContentCard'
 import About from '@/components/About'
 import { getTopItems } from '@/lib/content'
+import Link from 'next/link'
 
 export default function Home() {
   const topBlogPosts = getTopItems('blog', 3)
@@ -11,33 +12,18 @@ export default function Home() {
   const topStories = getTopItems('story', 3)
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="max-w-3xl mx-auto px-8 py-16 space-y-16">
+      <main className="mx-auto max-w-5xl space-y-20 px-6 py-16 sm:px-8">
         <Hero />
-
-        {/* Blog Posts Section */}
-        <section className="space-y-8">
-          <div className="flex items-center justify-between">
-            <h2 className="text-3xl font-semibold text-foreground">Blogs</h2>
-            <a href="/eigenLore/blog" className="text-muted-foreground hover:text-primary transition-colors">
-              View all →
-            </a>
-          </div>
-          <div className="space-y-6">
-            {topBlogPosts.map((post) => (
-              <ContentCard key={post.slug} item={post} showLink={true} />
-            ))}
-          </div>
-        </section>
 
         {/* Projects Section */}
         <section className="space-y-8">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-semibold text-foreground">Projects</h2>
-            <a href="/eigenLore/projects" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
               View all →
-            </a>
+            </Link>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {topProjects.map((project) => (
@@ -50,13 +36,28 @@ export default function Home() {
         <section className="space-y-8">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-semibold text-foreground">Stories</h2>
-            <a href="/eigenLore/stories" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/stories" className="text-muted-foreground hover:text-primary transition-colors">
               View all →
-            </a>
+            </Link>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {topStories.map((story) => (
               <ContentCard key={story.slug} item={story} showLink={true} />
+            ))}
+          </div>
+        </section>
+
+        {/* Blog Posts Section */}
+        <section className="space-y-8">
+          <div className="flex items-center justify-between">
+            <h2 className="text-3xl font-semibold text-foreground">Blogs</h2>
+            <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+              View all →
+            </Link>
+          </div>
+          <div className="space-y-6">
+            {topBlogPosts.map((post) => (
+              <ContentCard key={post.slug} item={post} showLink={true} />
             ))}
           </div>
         </section>

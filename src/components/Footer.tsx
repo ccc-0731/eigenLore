@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-border mt-16">
-      <div className="max-w-3xl mx-auto px-8 py-8">
+    <footer className="mt-16 border-t border-border/80 bg-white/55">
+      <div className="mx-auto max-w-5xl px-8 py-8">
         <div className="flex justify-center space-x-6">
           <Link href="https://github.com/ccc-0731" className="text-muted-foreground hover:text-primary transition-colors">
             GitHub
@@ -20,6 +20,9 @@ export default function Footer() {
         </div>
         <p className="text-center text-muted-foreground text-sm mt-4">
           © 2026 EigenLore. No rights reserved yet. 🐼
+        </p>
+        <p className="mt-2 text-center text-xs text-muted-foreground/80">
+          <time dateTime="2026-09-20">Last updated September 20, 2026</time>
         </p>
       </div>
     </footer>

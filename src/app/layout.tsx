@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Fraunces, Nunito_Sans } from 'next/font/google'
 import './globals.css'
 import { NerdModeProvider } from '@/lib/NerdModeContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const bodyFont = Nunito_Sans({ subsets: ['latin'], variable: '--font-body' })
+const displayFont = Fraunces({ subsets: ['latin'], variable: '--font-display' })
 
 // Get basePath from environment
 const basePath = process.env.GITHUB_PAGES ? '/eigenLore' : ''
@@ -23,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${bodyFont.variable} ${displayFont.variable}`}>
         <NerdModeProvider>
           {children}
         </NerdModeProvider>

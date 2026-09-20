@@ -7,9 +7,9 @@ export default function Blog() {
   const blogPosts = getContentByType('blog')
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="max-w-3xl mx-auto px-8 py-16">
+      <main className="mx-auto max-w-5xl px-6 py-16 sm:px-8">
         <div className="space-y-8">
           <header className="space-y-4">
             <h1 className="text-4xl font-bold mb-8">Blog</h1>

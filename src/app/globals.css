@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 40 40% 98%;
+    --background: 42 43% 97%;
     --foreground: 30 11% 9%;
     --card: 0 0% 100%;
     --card-foreground: 30 11% 9%;
     --popover: 0 0% 100%;
     --popover-foreground: 30 11% 9%;
-    --primary: 162 37% 52%;
+    --primary: 162 42% 39%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 200 74% 80%;
+    --secondary: 196 67% 84%;
     --secondary-foreground: 30 11% 9%;
     --muted: 210 17% 91%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 215 14% 40%;
     --accent: 30 88% 69%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
@@ -25,7 +23,7 @@
     --border: 210 17% 91%;
     --input: 210 17% 91%;
     --ring: 162 37% 52%;
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 }
 
@@ -35,10 +33,15 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    background-image:
+      radial-gradient(circle at 10% 8%, hsl(var(--secondary) / 0.3), transparent 28rem),
+      radial-gradient(circle at 90% 30%, hsl(var(--accent) / 0.1), transparent 24rem);
+    background-attachment: fixed;
   }
   h1, h2, h3 {
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--font-display), ui-serif, Georgia, serif;
+    letter-spacing: -0.025em;
   }
 }
 
@@ -90,6 +93,12 @@
   .markdown-content p {
     @apply mb-4;
   }
+  .markdown-content a {
+    @apply font-semibold text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary;
+  }
+  .markdown-content img {
+    @apply my-8 rounded-3xl shadow-lg;
+  }
   .markdown-content ul, .markdown-content ol {
     @apply mb-4 pl-6;
   }
@@ -110,5 +119,32 @@
   }
   .markdown-content .katex {
     @apply text-foreground;
+  }
+
+  .pdf-action {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .pdf-action-secondary {
+    @apply border border-border bg-white text-foreground;
+  }
+
+  .about-photo {
+    overflow: hidden;
+    filter: drop-shadow(0 16px 22px rgb(15 23 42 / 0.16));
+    -webkit-mask-image: radial-gradient(ellipse at center, black 66%, transparent 82%);
+    mask-image: radial-gradient(ellipse at center, black 66%, transparent 82%);
+  }
+
+  .about-photo-circle {
+    border-radius: 9999px;
+  }
+
+  .about-photo-golden {
+    overflow: hidden;
+    border-radius: 2.5rem;
+    filter: drop-shadow(0 16px 22px rgb(15 23 42 / 0.12));
+    -webkit-mask-image: radial-gradient(ellipse at center, black 50%, rgb(0 0 0 / 0.8) 66%, transparent 86%);
+    mask-image: radial-gradient(ellipse at center, black 50%, rgb(0 0 0 / 0.8) 66%, transparent 86%);
   }
 }

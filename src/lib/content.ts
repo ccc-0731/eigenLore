@@ -6,11 +6,43 @@ export interface ContentItem {
   slug: string
   content: string
   type: 'blog' | 'project' | 'story'
-  image?: string // Only for projects and stories
+  image?: string
+  pdf?: string
+  backgroundImage?: string
 }
 
 export const contentCollections = {
   blog: [
+    {
+      title: '2026 Summer',
+      description: 'Main themes are Avatar the Last Airbender; I got really good at disc golf; and I custom made a pcb named Zuko.',
+      date: '2026 Summer',
+      tags: ['Avatar', 'Disc Golf', 'PCB'],
+      slug: '2026-summer',
+      type: 'blog' as const,
+      image: '/2026Summer.png',
+      content: `Main themes are Avatar the Last Airbender; I got really good at disc golf; and I custom made a pcb named Zuko.`
+    },
+    {
+      title: 'Disc Golf',
+      description: 'I will write about my disc golf story.',
+      date: '2026.5 - present',
+      tags: ['Disc Golf', 'Outside'],
+      slug: 'disc-golf',
+      type: 'blog' as const,
+      image: '/discGolfputting.jpg',
+      content: `I will write about my disc golf story.`
+    },
+    {
+      title: 'Stuffed Animals',
+      description: 'I will introduce all my stuffed animals (: ',
+      date: '2026',
+      tags: ['Friends', 'Lore'],
+      slug: 'stuffed-animals',
+      type: 'blog' as const,
+      image: '/stuffed animals.png',
+      content: `I will introduce all my stuffed animals (:`
+    },
     {
       title: 'Template 😄',
       description: 'Go-to for markdown rendering and LaTeX support',
@@ -76,7 +108,7 @@ Lotr/Hobbit:
 * The Two Towers 🏆
 
 ### 直击心灵(?
-Kungfu Panda!!! *4
+Kungfu Panda!!! *3
 
 The Little Prince Movie (2015)
 
@@ -109,51 +141,19 @@ Percy Jackson!
 Sherlock
 `
 
-    }, 
-    {
-      title: 'About',
-      description: 'But who am I?',
-      date: '2026-03-25',
-      slug: 'about',
-      type: 'blog' as const, // Using blog type for about since it doesn't need images
-      content: `# Who am I?
-
-That is a very good question.
-
-## Eigenvectors
-
-My interests span quite a few different dimensions:
-
-- **Math**: Big 3b1b fan, I like both problem solving as well as pure math which make ppl be like "where is this useful."
-- **Engineering**: Building things!
-- **Creative Storytelling**: Creative writing, dystopian scifi/science fantasy. Also really like animations and trying to learn screenwriting.
-
-## What do I like?
-
-Doing cool stuff.
-
-- Percy Jackson fan
-- Pixar fan
-- I wanna play volleyball but nobody plays... 😭
-- Lightsaber dueling on Brittain lawn!
-- Doing cool things in the Hive Makerspace
-- I want to TA for Linear Algebra
-- If I have time I'll try learning some Manim
-
-## Why would you know me? 
-
-idk.
-- I'd be really happy if you're my future 1553 student that I'm TAing that teleported back in time. Please tell me, I'd appreciate it.
-- I'd also be really happy if you're someone I helped as a PI that teleported back in time. Please tell me, I'd appreciate it.
-- Robojackets: Battlebots-3lb-bumblebi / Roboracing-micromouse.
-- BDBI: SmartPath AI (Though I do struggle to try contribute...)
-
-## Disclaimer: 
-This is MY personal website! So I'm going to put whatever I like on it.`
-
     }
   ],
   projects: [
+    {
+      title: 'E-Plants',
+      description: 'I worked with an interactive design team at ShanghaiTech to make electronic plants out of optic fibers!',
+      date: '2026',
+      tags: ['CHI 2026', 'Interactive Design', 'Optical Fibers', 'HCI', 'Research'],
+      slug: 'e-plants',
+      type: 'project' as const,
+      pdf: '/Eplants.pdf',
+      content: `I worked with an interactive design team at ShanghaiTech to make electronic plants out of optic fibers! I 2nd authored the paper and we got accepted into CHI 2026 demo. I’ll write more about it.`
+    },
     {
       title: 'Micromouse',
       description: 'My story with Micromouse',
@@ -321,11 +321,11 @@ Github: https://github.com/ccc-0731/hero_imagined
 Silly Hashmaps take too long to debug ):`
     }, {
       title: 'Would the Little Prince Really Hate Math?',
-      description: 'Noooo precious, we HATES hashmapses!',
+      description: 'This is for my English 1102 essay, but I wrote it because of genuine interest.',
       date: '2026-03',
       tags: ['ENGL 1102', 'Essay', 'Math Nerdiness'],
       slug: 'le-petit-math',
-      type: 'project' as const,
+      type: 'blog' as const,
       image: '/eigenPi_confused.png',
       content: `
 ## “Set Theory and Sunsets: Would the Little Prince Really Hate Math?”
@@ -350,6 +350,24 @@ Podlubny, Igor. “The Little Prince -- the Lost Chapter.” Journal of Humanist
     }
   ],
   stories: [
+    {
+      title: 'Idea #0',
+      description: '',
+      date: '2026 Summer',
+      slug: 'idea-0',
+      type: 'story' as const,
+      pdf: '/RealmOfIdeas.pdf',
+      content: ''
+    },
+    {
+      title: '7.6 Disc Golf Fever Dream',
+      description: '',
+      date: '2026-07-06',
+      slug: 'disc-golf-fever-dream',
+      type: 'story' as const,
+      pdf: '/7.6 disc golf fever dream.pdf',
+      content: ''
+    },
     {
       title: 'Philosophy of a Robot',
       description: 'Short scifi story',
@@ -533,19 +551,11 @@ Link to google doc:
       slug: 'europa',
       type: 'story' as const,
       image: '/eigenPi_confused.png',
-      content: `
+      pdf: '/europa.pdf',
+      backgroundImage: '/story_background.JPG',
+      content: `## Story
 
-## Story
-
-<div style="width: 100%; display: flex; justify-content: center;">
-  <iframe
-    src="/eigenLore/europa.pdf"
-    width="100%"
-    height="800px"
-    style="border: none; max-width: 900px;"
-  ></iframe>
-</div>
-`
+A story I began in ninth grade and kept returning to through 2025. Read it below.`
     },
     {
       title: 'One upon a time',
@@ -643,6 +653,15 @@ And the traveller asked,
 
 who am I?
 `
+    },
+    {
+      title: '2021 Summer Short Stories',
+      description: 'the last one is kinda good',
+      date: '2021 Summer',
+      slug: '2021-summer-short-stories',
+      type: 'story' as const,
+      pdf: '/2021 Summer Short Stories.pdf',
+      content: `the last one is kinda good`
     }
   ]
 }
@@ -657,16 +676,23 @@ export const getAllContent = (): ContentItem[] => {
 }
 
 export const getContentByType = (type: ContentItem['type']): ContentItem[] => {
-  switch (type) {
-    case 'blog':
-      return contentCollections.blog
-    case 'project':
-      return contentCollections.projects
-    case 'story':
-      return contentCollections.stories
-    default:
-      return []
-  }
+  const items = getAllContent().filter(item => item.type === type)
+
+  if (type !== 'story') return items
+
+  const storyOrder = [
+    'europa',
+    'a-n',
+    'idea-0',
+    'disc-golf-fever-dream',
+    'coming-of-age-horror',
+    '2021-summer-short-stories',
+    'math-time',
+    'phil-robot',
+    'do-hw-chatgpt',
+  ]
+
+  return items.sort((a, b) => storyOrder.indexOf(a.slug) - storyOrder.indexOf(b.slug))
 }
 
 export const getContentBySlug = (slug: string): ContentItem | undefined => {
