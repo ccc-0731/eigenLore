@@ -6,7 +6,7 @@ import { Download, ExternalLink } from 'lucide-react'
 import AboutCopy from '@/components/AboutCopy'
 
 export default function AboutPage() {
-  const resumeUrl = encodeURI(publicFile('/Panda Resume 26.9.16.pdf'))
+  const resumeUrl = encodeURI(publicFile('/Panda Resume 26.10.28.pdf'))
 
   return (
     <div className="min-h-screen bg-background">
