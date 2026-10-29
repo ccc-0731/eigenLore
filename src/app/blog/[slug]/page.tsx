@@ -1,6 +1,7 @@
 import ContentPageTemplate from '@/components/ContentPageTemplate'
 import { getContentBySlug, getContentByType } from '@/lib/content'
 import { notFound } from 'next/navigation'
+import EcePortfolioPage from '@/components/EcePortfolioPage'
 
 interface BlogPostPageProps {
   params: {
@@ -20,6 +21,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   if (!content || content.type !== 'blog') {
     notFound()
+  }
+
+  if (content.slug === 'ece1100') {
+    return <EcePortfolioPage />
   }
 
   return <ContentPageTemplate content={content} />

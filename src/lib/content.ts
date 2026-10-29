@@ -7,6 +7,7 @@ export interface ContentItem {
   content: string
   type: 'blog' | 'project' | 'story'
   image?: string
+  heroImage?: string
   pdf?: string
   backgroundImage?: string
 }
@@ -29,6 +30,8 @@ export const contentCollections = {
       date: '2026-09-10',
       slug: 'hackgt-13-app',
       type: 'blog' as const,
+      image: '/hackgt13.png',
+      heroImage: '/hackgt13.png',
       content: `I had a lot of fun writing these 100 word essays for HackGT13 application, so I'm putting them here (: 
 
 ### What are you looking for out of your experience by attending HackGT 13?
@@ -49,6 +52,35 @@ Four months ago, my friend took me out to play disc golf for the very first time
 
 I want to sell a blessing from Poseidon that makes you gain ocean superpowers for a brief summer afternoon! No need for too much convincing, who wouldn't enjoy the ability to breathe underwater, master the currents, talk to sea creatures, or control water with sheer willpower alone? Anyone, even someone injured, sick, or just can’t swim can actually enjoy time by the seaside with ocean powers that can help mobilize on the water without getting wet. 
 I guess the hard part is convincing Poseidon to make me sell this.`
+    },
+    {
+      title: 'List of my dreams for the future',
+      description: '',
+      date: '2026-10-28',
+      slug: 'future',
+      type: 'blog' as const,
+      image: '/discgolf14.jpg',
+      content: `[I want to screenwrite and direct a movie in my lifetime!](/stories)
+
+[I want to be a professional disc golfer at some point.](/blog/disc-golf)
+
+Be an educational Youtuber, making cool engineering shenanigans and manim animations ([My youtube channel but I haven’t made anything yet](https://www.youtube.com/@cccPanda); [My bilibili channel which has like some videos but those are outnumbered by uploads of high school volleyball recordings](https://space.bilibili.com/453932065))
+
+A way to put that into something tangible could be “teach math/algorithms/engineering at Winthrop University”.
+
+Explanation: “Winthrop University” seems so random, but you can start to realize something when you go onto their official website and discover that there is a page dedicated to disc golf under athletics. As it turns out, they have 2 fantastic competition level disc golf courses, and is also where USDGC (United States Disc Golf Championships) is held! I followed the entire competition over a weekend watching on youtube and watched all the next-day coverage.
+
+Anyways, this basically means that (a) I want to teach and (b) I want to be near awesome disc golf courses so I can play a ton of disc golf in my free time.
+
+Some other career paths that appeal to me are escape room design and imagineering. (Although I have probably been in the mindblowing extraordinary amount of 3 escape rooms ever in my life).`
+    },
+    {
+      title: 'Panda Chu’s EPortfolio (The ECE1100 Subspace)',
+      description: 'ECE 1100',
+      date: '2026-10-28',
+      slug: 'ece1100',
+      type: 'blog' as const,
+      content: ''
     },
     {
       title: 'Disc Golf',
@@ -168,6 +200,24 @@ Percy Jackson!
 Sherlock
 `
 
+    },
+    {
+      title: 'My Story at Tech So Far',
+      description: '',
+      date: '2026-10-28',
+      slug: 'my-story-at-tech',
+      type: 'blog' as const,
+      content: ''
+    },
+    {
+      title: 'Professional Development',
+      description: '',
+      date: '2026-10-28',
+      slug: 'do-i-have-to',
+      type: 'blog' as const,
+      content: `I like teaching, I might be interested in a teaching role.
+
+(OR I just wanna be at home for the summer and play a ton of disc golf!)`
     }
   ],
   projects: [
@@ -176,9 +226,10 @@ Sherlock
       description: 'I worked with an interactive design team at ShanghaiTech to make electronic plants out of optic fibers!',
       date: '2026',
       tags: ['CHI 2026', 'Interactive Design', 'Optical Fibers', 'HCI', 'Research'],
-      slug: 'e-plants',
-      type: 'project' as const,
-      pdf: '/Eplants.pdf',
+  slug: 'e-plants',
+  type: 'project' as const,
+  image: '/eplant.png',
+  pdf: '/Eplants.pdf',
       content: `I worked with an interactive design team at ShanghaiTech to make electronic plants out of optic fibers! I 2nd authored the paper and we got accepted into CHI 2026 demo. I’ll write more about it.`
     },
     {
@@ -198,6 +249,21 @@ I started out just as one of the 24 million viewers of this veritasium video. (h
 I never could have imagined belonging at the APEC Micromouse competition, but there I was, someone that used to be just a kid among the 24 million viewers of a veritasium video about it. Curiosity led me to begin making micromouse at GT and I ended up as engineer behind the robot’s entire PCB. To me, it was my first PCB, after iterations of asking mentors “will this blow up” and routing late into the nights. Aside from the technical skills, I often look back on how curiosity and a passion to learn brought me to places I never imagined.
 (Copied from hackgt13 application! I’ll write more about it later.)
 `
+    },
+    {
+      title: 'Zuko V1',
+      description: 'I made Zuko over the summer! Origin of the name: ATLA',
+      date: '2026 Summer',
+      slug: 'zuko-v1',
+      type: 'project' as const,
+      image: '/firemousezuko1.png',
+      content: `I made Zuko over the summer! Origin of the name: ATLA
+
+Project was to solder it.
+
+Reflow soldering for the first time!
+
+[My story with Micromouse](/projects/mmouse)`
     },
     {
       title: 'Parodipi',
@@ -383,10 +449,11 @@ Podlubny, Igor. “The Little Prince -- the Lost Chapter.” Journal of Humanist
   stories: [
     {
       title: 'Idea #0',
-      description: '',
+      description: 'Bored? The next moment, you are in the Realm of Ideas...',
       date: '2026 Summer',
       slug: 'idea-0',
       type: 'story' as const,
+      image: '/RealmOfIdeas.png',
       pdf: '/RealmOfIdeas.pdf',
       content: ''
     },
@@ -396,6 +463,7 @@ Podlubny, Igor. “The Little Prince -- the Lost Chapter.” Journal of Humanist
       date: '2026-07-06',
       slug: 'disc-golf-fever-dream',
       type: 'story' as const,
+      image: '/discgolf76.png',
       pdf: '/7.6 disc golf fever dream.pdf',
       content: ''
     },
@@ -523,7 +591,8 @@ Feel free to adjust any details that better align with your personal writing ton
       slug: 'coming-of-age-horror',
       type: 'story' as const,
       image: '/eigenPi_confused.png',
-      content: `Message = '''
+      content: `~~~cpp
+Message = '''
 
 The dirt path ahead was illuminated only by moonlight. All I could hear was my own pounding heartbeat and rustling footsteps. The iron gate was in sight.
 
@@ -559,7 +628,8 @@ Wait, since this is my last thought and I am the last human, then who would be w
         cout << message;
         return 0;
     }
-	
+
+~~~
 
 (No just kidding I wrote it)
 `
@@ -569,7 +639,7 @@ Wait, since this is my last thought and I am the last human, then who would be w
       date: '2026-03',
       slug: 'a-n',
       type: 'story' as const,
-      image: '/eigenPi_confused.png',
+      image: '/An_thumbnail.png',
       content: `
 Link to google doc:
       [Story](https://docs.google.com/document/d/1Z9GJCi71R9sy2xKCRj-h0oS0fHHJN7cQ2G9yBUO_fyY/edit?usp=sharing)
@@ -581,7 +651,7 @@ Link to google doc:
       date: '2023-2025',
       slug: 'europa',
       type: 'story' as const,
-      image: '/eigenPi_confused.png',
+      image: '/europabg.png',
       pdf: '/europa.pdf',
       backgroundImage: '/story_background.JPG',
       content: `## Story
@@ -708,6 +778,14 @@ export const getAllContent = (): ContentItem[] => {
 
 export const getContentByType = (type: ContentItem['type']): ContentItem[] => {
   const items = getAllContent().filter(item => item.type === type)
+
+  if (type === 'blog') {
+    return items.sort((a, b) => {
+      if (a.slug === 'do-i-have-to') return 1
+      if (b.slug === 'do-i-have-to') return -1
+      return 0
+    })
+  }
 
   if (type !== 'story') return items
 

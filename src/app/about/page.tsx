@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="mx-auto max-w-5xl px-6 py-12 sm:px-8 sm:py-20">
+      <main className="mx-auto max-w-5xl px-6 py-6 sm:px-8 sm:py-10">
         <section className="relative overflow-hidden rounded-[2.5rem] border border-white/80 bg-white/90 p-7 shadow-xl shadow-slate-900/5 sm:p-12">
           <div aria-hidden="true" className="absolute -right-24 -top-28 h-80 w-80 rounded-full bg-secondary/35 blur-3xl" />
           <div aria-hidden="true" className="absolute -bottom-36 left-1/3 h-72 w-72 rounded-full bg-primary/15 blur-3xl" />

@@ -15,17 +15,18 @@ interface ProjectCardProps {
  * Used for projects and stories
  */
 export default function ProjectCard({ item, showLink = false, showDate = false }: ProjectCardProps) {
-  const imageSrc = item.image ? publicFile(item.image) : undefined
+  const imagePath = item.image || '/eigenPi_confused.png'
+  const imageSrc = imagePath ? publicFile(imagePath) : undefined
 
   const CardContent = () => (
     <Card className="group h-full overflow-hidden rounded-3xl border-border/80 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
-      {item.image && (
+      {imagePath && (
         <div className="aspect-video relative overflow-hidden rounded-t-lg">
           <Image
             src={imageSrc || ''}
             alt={`${item.title} preview`}
             fill
-            className="object-cover"
+            className={`object-cover object-center ${item.slug === 'europa' ? 'scale-[1.2]' : ''}`}
           />
         </div>
       )}

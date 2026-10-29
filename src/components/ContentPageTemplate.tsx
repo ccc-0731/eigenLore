@@ -29,6 +29,15 @@ export default function ContentPageTemplate({
       <Navbar />
       <main className="relative mx-auto max-w-4xl px-6 py-16 sm:px-8">
         <article className="space-y-8 rounded-[2rem] border border-white/70 bg-white/90 p-7 shadow-xl shadow-slate-900/5 backdrop-blur-sm sm:p-12">
+          {content.heroImage && (
+            <div className="relative mx-auto aspect-[16/9] w-full max-w-2xl overflow-hidden rounded-3xl">
+              <img
+                src={publicFile(content.heroImage)}
+                alt={`${content.title} cover`}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          )}
           <header className="space-y-4">
             <h1 className="text-4xl font-bold text-foreground sm:text-5xl">{content.title}</h1>
             {showMetadata && (
