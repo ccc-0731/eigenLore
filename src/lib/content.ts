@@ -430,7 +430,7 @@ Silly Hashmaps take too long to debug ):`
       tags: ['ENGL 1102', 'Essay', 'Math Nerdiness'],
       slug: 'le-petit-math',
       type: 'blog' as const,
-      image: '/eigenPi_confused.png',
+      image: '/Software engineer and the little prince_1.JPG',
       content: `
 <img class="little-prince-photo" src="/Software%20engineer%20and%20the%20little%20prince_1.JPG" alt="Software engineer and the Little Prince" />
 
