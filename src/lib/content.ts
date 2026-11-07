@@ -1,4 +1,7 @@
+import { zukoContent, zukoFilesContent } from './zuko'
+
 export interface ContentItem {
+  unlisted?: boolean
   title: string
   description: string
   date: string
@@ -77,7 +80,7 @@ Some other career paths that appeal to me are escape room design and imagineerin
     {
       title: 'Panda Chu’s EPortfolio (The ECE1100 Subspace)',
       description: 'ECE 1100',
-      date: '2026-10-28',
+      date: '2026-11',
       slug: 'ece1100',
       type: 'blog' as const,
       content: ''
@@ -228,18 +231,18 @@ Sherlock
       tags: ['CHI 2026', 'Interactive Design', 'Optical Fibers', 'HCI', 'Research'],
   slug: 'e-plants',
   type: 'project' as const,
-  image: '/eplant.png',
+  image: '/eplant.jpg',
   pdf: '/Eplants.pdf',
       content: `I worked with an interactive design team at ShanghaiTech to make electronic plants out of optic fibers! I 2nd authored the paper and we got accepted into CHI 2026 demo. I’ll write more about it.`
     },
     {
-      title: 'Micromouse',
-      description: 'My story with Micromouse',
+      title: 'My Story with Micromouse',
+      description: 'The encounters that brought me into the world of EE',
       date: '2024 June - present',
-      tags: ['EE', 'PCB Design', 'Soldering', 'EasyEDA'],
+      tags: ['ShanghaiTech', 'PCB Design', 'Soldering', 'APEC'],
       slug: 'mmouse',
       type: 'project' as const,
-      image: '/firemousezuko.png',
+      image: '/240718.JPG',
       content: `# Micromouse
 
 ## I made this cool board over 2026 summer all by myself!
@@ -253,17 +256,21 @@ I never could have imagined belonging at the APEC Micromouse competition, but th
     {
       title: 'Zuko V1',
       description: 'I made Zuko over the summer! Origin of the name: ATLA',
-      date: '2026 Summer',
+      date: '2026 Summer – Fall',
+      tags: ['EE', 'PCB Design', 'Reflow soldering', 'EasyEDA', 'the Hive IDC Makerspace'],
       slug: 'zuko-v1',
       type: 'project' as const,
       image: '/firemousezuko1.png',
-      content: `I made Zuko over the summer! Origin of the name: ATLA
-
-Project was to solder it.
-
-Reflow soldering for the first time!
-
-[My story with Micromouse](/projects/mmouse)`
+      content: zukoContent
+    },
+    {
+      title: 'Zuko project files',
+      description: 'Design files, schematics, and a summer design walkthrough.',
+      date: '2026 Summer',
+      slug: 'zuko-project-files',
+      type: 'project' as const,
+      unlisted: true,
+      content: zukoFilesContent
     },
     {
       title: 'Parodipi',
@@ -463,7 +470,7 @@ Podlubny, Igor. “The Little Prince -- the Lost Chapter.” Journal of Humanist
       date: '2026-07-06',
       slug: 'disc-golf-fever-dream',
       type: 'story' as const,
-      image: '/discgolf76.png',
+      image: '/discgolf76.JPG',
       pdf: '/7.6 disc golf fever dream.pdf',
       content: ''
     },
@@ -777,7 +784,7 @@ export const getAllContent = (): ContentItem[] => {
 }
 
 export const getContentByType = (type: ContentItem['type']): ContentItem[] => {
-  const items = getAllContent().filter(item => item.type === type)
+  const items = getAllContent().filter(item => item.type === type && !('unlisted' in item && item.unlisted))
 
   if (type === 'blog') {
     return items.sort((a, b) => {

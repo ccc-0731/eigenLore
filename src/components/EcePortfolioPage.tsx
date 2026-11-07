@@ -22,7 +22,7 @@ export default function EcePortfolioPage() {
               <div className="mt-6 space-y-5 text-lg leading-8 text-muted-foreground">
                 <p>I’m <strong>Panda Chu</strong>, a 2nd year student and the one and only Electrical Engineering and Math+Computing double major student at Georgia Tech!</p>
                 <p>
-                  I love asking "But Why?". My interest eigenvectors span quite a few different dimensions. I enjoy <Link href="/stories" className="interest-link">creative storytelling</Link>, mathematical puzzle-solving (huge <a href="https://www.youtube.com/@3blue1brown" className="interest-link" target="_blank" rel="noreferrer">3blue1brown</a> fan!) and <Link href="/blog/disc-golf" className="interest-link">disc golf</Link>. I’m also a big fan of Avatar the Last Airbender series and Percy Jackson.
+                  I love asking &ldquo;But Why?&rdquo;. My interest eigenvectors span quite a few different dimensions. I enjoy <Link href="/projects" className="interest-link">building</Link> things, <Link href="/stories" className="interest-link">creative storytelling</Link>, mathematical puzzle-solving (huge <a href="https://www.youtube.com/@3blue1brown" className="interest-link" target="_blank" rel="noreferrer">3blue1brown</a> fan!) and <Link href="/blog/disc-golf" className="interest-link">disc golf</Link>. I’m also a big fan of Avatar the Last Airbender series and Percy Jackson.
                 </p>
               </div>
             </div>
@@ -38,12 +38,12 @@ export default function EcePortfolioPage() {
           </div>
         </section>
 
-        <div className="mt-10 divide-y divide-border rounded-[2rem] border border-border bg-white/80 px-7 shadow-sm sm:px-10">
-          <section className="py-9 text-lg leading-8 text-muted-foreground">
-            <p>This is a subspace of my personal website! It’s still a work in progress with occasional updates when I feel like it. This is not the landing page, and it is in no way intended to be professional. I made it for fun to spill some of my whims onto the internet. You can click around my personal website and see some additional cool content that I put on here!</p>
+        <div className="mt-10 space-y-10">
+          <section className="ece-card text-lg leading-8 text-muted-foreground">
+            <p>This is a subspace of my personal website! It’s still a work in progress with occasional updates when I feel like it. This is not the landing page, and it is in no way intended to be professional. <em>I made it for fun to spill some of my whims onto the internet!</em> You can click around my personal website and see some additional cool content that I put on here!</p>
           </section>
 
-          <nav className="py-9" aria-label="Table of Contents of this EPortfolio">
+          <nav className="ece-card" aria-label="Table of Contents of this EPortfolio">
             <h2 className="text-3xl font-bold">Table of Contents of this EPortfolio</h2>
             <div className="mt-5 flex flex-col items-start gap-3 text-lg">
               <a className="ece-toc-link" href="#about-me">About Me (Return to top)</a>
@@ -54,25 +54,20 @@ export default function EcePortfolioPage() {
             </div>
           </nav>
 
-          <section id="my-story-at-tech" className="scroll-mt-24 py-9">
+          <section id="my-story-at-tech" className="ece-card scroll-mt-24">
             <Link href="/blog/my-story-at-tech" className="inline-block hover:text-primary">
               <h2 className="text-3xl font-bold underline decoration-primary/25 underline-offset-4">My Story at Tech So Far</h2>
             </Link>
           </section>
 
-          <section id="discovery-project" className="scroll-mt-24 py-9">
-            <h2 className="text-3xl font-bold">Discovery Project</h2>
-            <div className="mt-5 space-y-4 text-lg leading-8 text-muted-foreground">
-              <p>I made Zuko over the summer! Origin of the name: ATLA</p>
-              <p>Project was to solder it.</p>
-              <p>Reflow soldering for the first time!</p>
-              <p>
-                Read more about the discovery project: <Link href="/projects/mmouse" className="ece-inline-link">My story with Micromouse</Link>, Link to full documentation on Zuko (<Link href="/projects/zuko-v1" className="ece-highlight-link">All hail firemouse Zuko!</Link>)
-              </p>
-            </div>
+          <section id="discovery-project" className="ece-card relative isolate scroll-mt-24 overflow-hidden">
+            <Image src={publicFile('/zuko_documentation/reflow/robot.jpg')} alt="" fill className="pointer-events-none -z-10 object-cover opacity-20" />
+            <Link href="/projects/zuko-v1" className="inline-block hover:text-primary">
+              <h2 className="text-3xl font-bold underline decoration-primary/25 underline-offset-4">Discovery Project</h2>
+            </Link>
           </section>
 
-          <section id="professional-development" className="scroll-mt-24 py-9">
+          <section id="professional-development" className="ece-card scroll-mt-24">
             <Link href="/blog/do-i-have-to" className="inline-block hover:text-primary">
               <h2 className="text-3xl font-bold underline decoration-primary/25 underline-offset-4">Professional Development</h2>
             </Link>
@@ -85,7 +80,7 @@ export default function EcePortfolioPage() {
             </Link>
           </section>
 
-          <section id="my-resume" className="scroll-mt-24 py-9">
+          <section id="my-resume" className="ece-card scroll-mt-24">
             <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
               <h2 className="text-3xl font-bold">My Resume</h2>
               <div className="flex flex-wrap gap-2">

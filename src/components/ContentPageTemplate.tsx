@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import MarkdownRenderer from '@/components/MarkdownRenderer'
 import { ContentItem } from '@/lib/content'
+import { zukoSections } from '@/lib/zuko'
 import { publicFile } from '@/lib/site'
 import { Download, ExternalLink } from 'lucide-react'
 
@@ -14,6 +15,7 @@ export default function ContentPageTemplate({
   content,
   showMetadata = true,
 }: ContentPageTemplateProps) {
+  const isZuko = content.slug === 'zuko-v1'
   const pdfUrl = content.pdf ? encodeURI(publicFile(content.pdf)) : undefined
   const backgroundUrl = content.backgroundImage ? encodeURI(publicFile(content.backgroundImage)) : undefined
 
@@ -28,7 +30,7 @@ export default function ContentPageTemplate({
       )}
       <Navbar />
       <main className="relative mx-auto max-w-4xl px-6 py-16 sm:px-8">
-        <article className="space-y-8 rounded-[2rem] border border-white/70 bg-white/90 p-7 shadow-xl shadow-slate-900/5 backdrop-blur-sm sm:p-12">
+        <article className={isZuko ? "space-y-8" : "space-y-8 rounded-[2rem] border border-white/70 bg-white/90 p-7 shadow-xl shadow-slate-900/5 backdrop-blur-sm sm:p-12"}>
           {content.heroImage && (
             <div className="relative mx-auto aspect-[16/9] w-full max-w-2xl overflow-hidden rounded-3xl">
               <img
@@ -40,6 +42,7 @@ export default function ContentPageTemplate({
           )}
           <header className="space-y-4">
             <h1 className="text-4xl font-bold text-foreground sm:text-5xl">{content.title}</h1>
+            {content.slug === 'mmouse' && <p className="text-lg text-muted-foreground">{content.description}</p>}
             {showMetadata && (
               <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
                 <time className="text-sm">{content.date}</time>
@@ -59,7 +62,11 @@ export default function ContentPageTemplate({
             )}
           </header>
 
-          <MarkdownRenderer content={content.content} />
+          {isZuko ? zukoSections.map(section => (
+            <section key={section.id} id={section.id} className={`zuko-section zuko-${section.id}-card rounded-[2rem] border border-white/70 bg-white/90 p-7 shadow-xl shadow-slate-900/5 sm:p-12`}>
+              <MarkdownRenderer content={section.content} />
+            </section>
+          )) : <MarkdownRenderer content={content.content} />}
 
           {pdfUrl && (
             <section className="space-y-4 border-t border-border pt-8">

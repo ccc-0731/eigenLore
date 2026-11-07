@@ -1,5 +1,5 @@
 import ContentPageTemplate from '@/components/ContentPageTemplate'
-import { getContentBySlug, getContentByType } from '@/lib/content'
+import { getAllContent, getContentBySlug } from '@/lib/content'
 import { notFound } from 'next/navigation'
 
 interface ProjectPageProps {
@@ -9,7 +9,7 @@ interface ProjectPageProps {
 }
 
 export async function generateStaticParams() {
-  const projects = getContentByType('project')
+  const projects = getAllContent().filter(item => item.type === 'project')
   return projects.map((project) => ({
     slug: project.slug,
   }))

@@ -22,9 +22,9 @@ export default function Footer() {
           © 2026 EigenLore. No rights reserved yet. 🐼
         </p>
         <p className="mt-2 text-center text-xs text-muted-foreground/80">
-          <time dateTime="2026-10-28">Last Updated: 10.28.2026</time>
+          <time dateTime="2026-11-06">Last Updated: 11.06.2026</time>
           <span aria-hidden="true"> &nbsp;•&nbsp; </span>
-          <span>Designed with real human creativity myself; Brought to life by some vibe-coding (;</span>
+          <span>Designed with real human creativity myself; Brought to life with some vibe-coding (;</span>
         </p>
       </div>
     </footer>
