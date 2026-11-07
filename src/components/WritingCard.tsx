@@ -26,7 +26,6 @@ export default function WritingCard({ item, showLink = false }: WritingCardProps
         </div>
       )}
       <div className="p-6">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary">Field note</p>
         <h3 className="mb-2 text-2xl font-semibold text-foreground">{item.title}</h3>
         <p className="mb-5 text-muted-foreground">{item.description}</p>
         <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
