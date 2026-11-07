@@ -249,3 +249,10 @@
   padding-top: 0;
   border-top: 0;
 }
+
+.markdown-content .little-prince-photo {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto 2rem;
+}

@@ -432,6 +432,8 @@ Silly Hashmaps take too long to debug ):`
       type: 'blog' as const,
       image: '/eigenPi_confused.png',
       content: `
+<img class="little-prince-photo" src="/Software%20engineer%20and%20the%20little%20prince_1.JPG" alt="Software engineer and the Little Prince" />
+
 ## “Set Theory and Sunsets: Would the Little Prince Really Hate Math?”
 
 The Little Prince critiques grown-ups as being obsessed with quantifying things with numbers. However, mathematicians argue that math is more about imaginative problem solving than about numbers. The social stigma against mathematics is backed by how math is portrayed in a stereotypical way in children’s literature and media, often associated with rigidness and conformity. The main critique from the little prince is about adults that lose imagination and stop asking questions, how society as a collective over-quantify things – confusing the abstraction from what should be understood and felt. The ways that literary works portray the subject of math is an example. Whether it is in the infinite set of ways the Little Prince is interpreted or how math is viewed as rigid or “nerdy”, our views and interpretations of a story or concept reveal more about ourselves than the story or a concept itself.
