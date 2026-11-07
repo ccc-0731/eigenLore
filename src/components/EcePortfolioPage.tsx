@@ -22,7 +22,7 @@ export default function EcePortfolioPage() {
               <div className="mt-6 space-y-5 text-lg leading-8 text-muted-foreground">
                 <p>I’m <strong>Panda Chu</strong>, a 2nd year student and the one and only Electrical Engineering and Math+Computing double major student at Georgia Tech!</p>
                 <p>
-                  My interest eigenvectors span quite a few different dimensions. I enjoy <Link href="/stories" className="interest-link">creative storytelling</Link>, mathematical puzzle-solving (huge <a href="https://www.youtube.com/@3blue1brown" className="interest-link" target="_blank" rel="noreferrer">3blue1brown</a> fan!) and <Link href="/blog/disc-golf" className="interest-link">disc golf</Link>. I’m also a big fan of Avatar the Last Airbender series and Percy Jackson.
+                  I love asking "But Why?". My interest eigenvectors span quite a few different dimensions. I enjoy <Link href="/stories" className="interest-link">creative storytelling</Link>, mathematical puzzle-solving (huge <a href="https://www.youtube.com/@3blue1brown" className="interest-link" target="_blank" rel="noreferrer">3blue1brown</a> fan!) and <Link href="/blog/disc-golf" className="interest-link">disc golf</Link>. I’m also a big fan of Avatar the Last Airbender series and Percy Jackson.
                 </p>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function EcePortfolioPage() {
 
         <div className="mt-10 divide-y divide-border rounded-[2rem] border border-border bg-white/80 px-7 shadow-sm sm:px-10">
           <section className="py-9 text-lg leading-8 text-muted-foreground">
-            <p>This is a subspace of my personal website! It’s still a work in progress with occasional updates when I feel like it. This is not meant to be the landing page for my personal website (it’s not really for the eyes of recruiters… I made it for fun to spill some of my whims onto the internet) nor anything too seriously correlated to professional career development. For the requirements of this assignment, you can click around my personal website and see some additional cool content that I put on here!</p>
+            <p>This is a subspace of my personal website! It’s still a work in progress with occasional updates when I feel like it. This is not the landing page, and it is in no way intended to be professional. I made it for fun to spill some of my whims onto the internet. You can click around my personal website and see some additional cool content that I put on here!</p>
           </section>
 
           <nav className="py-9" aria-label="Table of Contents of this EPortfolio">

@@ -458,8 +458,8 @@ Podlubny, Igor. “The Little Prince -- the Lost Chapter.” Journal of Humanist
       content: ''
     },
     {
-      title: '7.6 Disc Golf Fever Dream',
-      description: '',
+      title: 'The Last Night on the Disc Golf Fields',
+      description: 'One does not simply return to 2026 summer...',
       date: '2026-07-06',
       slug: 'disc-golf-fever-dream',
       type: 'story' as const,
