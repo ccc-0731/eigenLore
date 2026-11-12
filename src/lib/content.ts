@@ -211,7 +211,7 @@ Sherlock
       date: '2026-11-11',
       slug: 'my-story-at-tech',
       type: 'blog' as const,
-      content: `- I entered Tech August 2025!
+      content: `I entered Tech August 2025!
 
 Coming into Tech, I was a [CS major]{booooo👎}. I struggled a lot with imposter syndrome as it seems like many people around me had internship or research experience or already shipped software products before even starting college!
 

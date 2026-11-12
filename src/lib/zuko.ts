@@ -1,3 +1,5 @@
+import { publicFile } from './site'
+
 const photo = (folder: string, file: string, caption: string) =>
   `<figure class="zuko-photo"><img src="/zuko_documentation/${folder}/${encodeURIComponent(file)}" alt="${caption}" loading="lazy" /><figcaption>${caption}</figcaption></figure>`
 
@@ -9,14 +11,27 @@ export const zukoFilesContent = `
 
 - <a href="/zuko_documentation/Zuko%20KiCAD.zip" download>Download the KiCad project (.zip)</a>
 - <a href="/zuko_documentation/Zuko.epro" download>Download the EasyEDA project (.epro)</a>
-- [Schematic PDF](/zuko_documentation/zuko_schematic.pdf)
-- [PCB layout PDF](/zuko_documentation/zuko_layout.pdf)
 
-### Me over summer attempting to explain my questionable design choices before design review
+### Schematic PDF
+
+<iframe class="zuko-pdf" src="${publicFile('/zuko_documentation/zuko_schematic.pdf')}" title="Zuko schematic PDF" loading="lazy"></iframe>
+
+[Open Schematic PDF](/zuko_documentation/zuko_schematic.pdf)
+
+### PCB Layout PDF
+
+<iframe class="zuko-pdf" src="${publicFile('/zuko_documentation/zuko_layout.pdf')}" title="Zuko PCB layout PDF" loading="lazy"></iframe>
+
+[Open PCB Layout PDF](/zuko_documentation/zuko_layout.pdf)
+
+
+## Me over summer attempting to explain my questionable design choices before design review
+
+I went over most of the schematic but the screen recording apparently froze before I showed the pcb layout so it's just kinda me talking
 
 ${video('WQ5MDKXryGE', 'Zuko summer design review')}
 
-[Back to Zuko V1](/projects/zuko-v1)
+[Assembling Zuko, Fall 2026](/projects/zuko-v1)
 `
 
 const zukoIntro = `

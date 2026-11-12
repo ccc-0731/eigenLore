@@ -231,6 +231,14 @@
   line-height: 1.4;
   color: #64748b;
 }
+.markdown-content .zuko-pdf {
+  display: block;
+  width: 100%;
+  height: clamp(24rem, 70vh, 48rem);
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 .markdown-content .zuko-video {
   display: block;
   width: 100%;

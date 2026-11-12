@@ -24,7 +24,7 @@ export default function EcePortfolioPage() {
             <div>
               <h2 className="text-3xl text-foreground">Who am I?</h2>
               <div className="mt-6 space-y-5 text-lg leading-8 text-muted-foreground">
-                <p>I’m <strong>Panda Chu</strong>, a 2nd year student and the one and only Electrical Engineering and Math+Computing double major student at Georgia Tech!</p>
+                <p>I’m <strong>Panda Chu</strong>, a 2nd year student and the one and only Electrical Engineering and Math+Computing double major at Georgia Tech!</p>
                 <p>
                   I love asking &ldquo;But Why?&rdquo;. My interest eigenvectors span quite a few different dimensions. I enjoy <Link href="/projects" className="interest-link">building</Link> things, <Link href="/stories" className="interest-link">creative storytelling</Link>, mathematical puzzle-solving (huge <a href="https://www.youtube.com/@3blue1brown" className="interest-link" target="_blank" rel="noreferrer">3blue1brown</a> fan!) and <Link href="/blog/disc-golf" className="interest-link">disc golf</Link>. I’m also a big fan of Avatar the Last Airbender series and Percy Jackson.
                 </p>
