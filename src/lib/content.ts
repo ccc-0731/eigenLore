@@ -112,6 +112,7 @@ Some other career paths that appeal to me are escape room design and imagineerin
       tags: ['markdown', 'latex', 'demo'],
       slug: 'sample-blog-post',
       type: 'blog' as const,
+      unlisted: true,
       content: `# Markdown & LaTEX Template Info
 
 AI helped demonstration of markdown rendering with LaTeX support.
@@ -207,20 +208,86 @@ Sherlock
     {
       title: 'My Story at Tech So Far',
       description: '',
-      date: '2026-10-28',
+      date: '2026-11-11',
       slug: 'my-story-at-tech',
       type: 'blog' as const,
-      content: ''
+      content: `- I entered Tech August 2025!
+
+Coming into Tech, I was a [CS major]{booooo👎}. I struggled a lot with imposter syndrome as it seems like many people around me had internship or research experience or already shipped software products before even starting college!
+
+(The reason I chose CS: I was debating between CS and EE, and there was a policy about how you can switch out of CS but not into CS, so I went with CS 🤷)
+
+## 1st year Fall semester
+
+Classes I took:
+- Math 1554 - Intro to Linear Algebra
+- CS 1331 - Intro to Object Oriented Programming
+- CS 1100 - CS Freshman Leap Seminar
+- PUBP 1142 - Teams and Collaboration (Grand Challenges LLC)
+- HIST 2111 - US History till 1877
+- PSYC 1101 - Intro to General Psychology
+- VIP - Climate Resilience with WeLAB
+
+During my first Fall semester, I also participated in 2 hackathons, HackGT12 and AI ATL!
+
+My proudest project was my [agentic workflow](/projects/hero-imagined/) in CS1100, and I won best demo in class! It was a lot of prompting and vibe-coding, but I was really happy it worked and honestly the most rewarding moment was when some classmates actually came up to me after class to say that this was really cool!
+
+## 1st year Spring semester
+
+Classes:
+- CS 1332 - Data Structures and Algorithms
+- CS 2051 - Intro to Discrete Math (Honors)
+- Math 2551 - Multivariable Calculus
+- ENGL 1102 - English II
+- GC 1201 - Grand Challenges
+- APPH 1060 - Health (Where I got the 1st B in my life. And yeah I just basically forgot to do homework.)
+
+I really enjoyed reading and revisiting many stories I read when I was younger during English 1102, and began reading and writing more!
+
+After realizing that I actually enjoyed math and algorithms wayyy more than debugging code, I switched to EE at the end of this semester! I realized I didn’t want a life in software in front of a computer, typing code.
+
+## 2nd year Fall
+
+I’m finally starting EE, and I just declared MathComputing as a double major so it's official now! This is also my first semester being a math TA for 1553.
+
+Classes I’m taking:
+- ECE 2020 - Digital System Design
+- ECE 2026 - Intro to Digital Signal Processing
+- ECE 1100 - 🤷
+- Math 2552 - Differential Equations
+- Math 3406 - 2nd Course in Linear Algebra
+
+
+## Other notes & Community Engagement
+
+### RoboJackets
+
+I joined RoboJackets and somehow ended up becoming electrical lead after 1 semester.
+
+I learned PCB design and made my first board!
+
+### Math
+
+I was lucky enough to have Dr. Cuyler Warnock’s section for 1554. He’s the best!!! His contagious passion about math inspired me so much, so I added a math minor! He also encouraged me to become a TA. I still stop by his office hours to chat (everyone should stop by!), and he is also now my academic advisor for MathComputing!
+
+### The Hive Makerspace
+
+- I sign up for so many workshops and learn to do cool things!
+- I’ve met awesome PI friends that have taught me a lot!
+- I’ve always wanted to be a PI! However, my application essays kinda sucked 😂`
     },
     {
       title: 'Professional Development',
       description: '',
-      date: '2026-10-28',
+      date: '2026-11-11',
       slug: 'do-i-have-to',
       type: 'blog' as const,
-      content: `I like teaching, I might be interested in a teaching role.
+      unlisted: true,
+      content: `I’m not sure what I want to do yet, given my really wide range of interests! I am currently inclined towards teaching (anything, really) or perhaps R&D hardware prototyping at a small startup company where I can explore possibilities of designing and making things from scratch. (Not the stress of big tech companies, please!) I am particularly interested in how all my different skills can be put together (designing hardware, CAD and software!)
 
-(OR I just wanna be at home for the summer and play a ton of disc golf!)`
+For general directions, maybe HCI (Human-Computer Interaction) or Bioengineering devices? I’ve always been fascinated by the intersections of different disciplines, and I think I would enjoy making devices related to natural sciences (I really enjoyed biology and geography back in high school).
+
+In the meantime, I will try to find research that interests me in the following semesters and continue to TA math! I have also been applying to become a hive PI every single semester so far… (At some point I shall get it!)`
     }
   ],
   projects: [
@@ -787,14 +854,6 @@ export const getAllContent = (): ContentItem[] => {
 
 export const getContentByType = (type: ContentItem['type']): ContentItem[] => {
   const items = getAllContent().filter(item => item.type === type && !('unlisted' in item && item.unlisted))
-
-  if (type === 'blog') {
-    return items.sort((a, b) => {
-      if (a.slug === 'do-i-have-to') return 1
-      if (b.slug === 'do-i-have-to') return -1
-      return 0
-    })
-  }
 
   if (type !== 'story') return items
 

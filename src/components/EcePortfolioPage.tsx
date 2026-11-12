@@ -3,10 +3,14 @@ import Link from 'next/link'
 import { Download, ExternalLink } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import MarkdownRenderer from '@/components/MarkdownRenderer'
+import { getContentBySlug } from '@/lib/content'
 import { publicFile } from '@/lib/site'
 
 export default function EcePortfolioPage() {
   const resumeUrl = encodeURI(publicFile('/Panda Resume 26.10.28.pdf'))
+  const myStory = getContentBySlug('my-story-at-tech')
+  const professionalDevelopment = getContentBySlug('do-i-have-to')
 
   return (
     <div className="min-h-screen bg-background">
@@ -58,6 +62,11 @@ export default function EcePortfolioPage() {
             <Link href="/blog/my-story-at-tech" className="inline-block hover:text-primary">
               <h2 className="text-3xl font-bold underline decoration-primary/25 underline-offset-4">My Story at Tech So Far</h2>
             </Link>
+            {myStory && (
+              <div className="mt-5">
+                <MarkdownRenderer content={myStory.content} />
+              </div>
+            )}
           </section>
 
           <section id="discovery-project" className="ece-card relative isolate scroll-mt-24 overflow-hidden">
@@ -71,10 +80,11 @@ export default function EcePortfolioPage() {
             <Link href="/blog/do-i-have-to" className="inline-block hover:text-primary">
               <h2 className="text-3xl font-bold underline decoration-primary/25 underline-offset-4">Professional Development</h2>
             </Link>
-            <div className="mt-5 space-y-4 text-lg leading-8 text-muted-foreground">
-              <p>I like teaching, I might be interested in a teaching role.</p>
-              <p>(OR I just wanna be at home for the summer and play a ton of disc golf!)</p>
-            </div>
+            {professionalDevelopment && (
+              <div className="mt-5">
+                <MarkdownRenderer content={professionalDevelopment.content} />
+              </div>
+            )}
             <Link href="/blog/future" className="ece-secret-link mt-8 inline-block">
               What I <em>really</em> want to do
             </Link>

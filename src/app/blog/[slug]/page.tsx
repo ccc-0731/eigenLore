@@ -1,5 +1,5 @@
 import ContentPageTemplate from '@/components/ContentPageTemplate'
-import { getContentBySlug, getContentByType } from '@/lib/content'
+import { contentCollections, getContentBySlug } from '@/lib/content'
 import { notFound } from 'next/navigation'
 import EcePortfolioPage from '@/components/EcePortfolioPage'
 
@@ -10,8 +10,7 @@ interface BlogPostPageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = getContentByType('blog')
-  return posts.map((post) => ({
+  return contentCollections.blog.map((post) => ({
     slug: post.slug,
   }))
 }

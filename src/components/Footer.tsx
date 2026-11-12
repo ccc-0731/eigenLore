@@ -14,7 +14,7 @@ export default function Footer() {
           <Link href="https://www.youtube.com/@cccPanda" className="text-muted-foreground hover:text-primary transition-colors">
             YouTube
           </Link>
-          <Link href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="mailto:eigenlore@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
             Email
           </Link>
         </div>
@@ -22,7 +22,7 @@ export default function Footer() {
           © 2026 EigenLore. No rights reserved yet. 🐼
         </p>
         <p className="mt-2 text-center text-xs text-muted-foreground/80">
-          <time dateTime="2026-11-06">Last Updated: 11.06.2026</time>
+          <time dateTime="2026-11-06">Last Updated: 11.11.2026</time>
           <span aria-hidden="true"> &nbsp;•&nbsp; </span>
           <span>Designed with real human creativity myself; Brought to life with some vibe-coding (;</span>
         </p>

@@ -143,9 +143,27 @@ Update: The top half of the inductor for the 5V buck converter circuit just fell
 Anyways, resoldering… Next Monday perhaps.
 `
 
+const zukoSkills = `
+## Skills I learned from the discovery project
+
+- I used the ProtoLaser to make a stencil for the first time! I learned how to select the correct [Gerber]{PCB manufacturing files} layer to use the really cool machine!
+- Lots of (advanced!) soldering, ranging from using solder paste and a stencil and cooking the board in a reflow oven to removing components with a hot air gun, re-soldering using a hot air gun, and fixing bridged pins using lots of flux and drag soldering.
+- Using the voltage supply and digital multimeter, as well as the really cool microscope to test for bad solder joints and debugging the soldering!
+`
+
+const zukoNext = `
+## What’s next for Zuko
+
+Resoldering the USB-C back on 💀
+
+Then, it will finally be time for programming and testing!!
+`
+
 // Keep each major section independently renderable as a card.
 export const zukoSections = [
   { id: 'intro', content: zukoIntro },
   { id: 'timeline', content: zukoTimeline },
+  { id: 'skills', content: zukoSkills },
+  { id: 'whats-next', content: zukoNext },
 ]
 export const zukoContent = zukoSections.map(section => section.content).join('\n\n')
